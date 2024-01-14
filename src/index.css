@@ -31,18 +31,21 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 
 button {
+  margin: 10px;
+  width: 80px;
+  height: 80px;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  border: 3px solid transparent;
+  padding: 0.5em;
+  font-size: 28px;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #1b1919;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -54,6 +57,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.board-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.moves {
+  width: 100%;
+  height: auto;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
